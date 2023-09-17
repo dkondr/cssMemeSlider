@@ -12,37 +12,33 @@
 <body>
   <main class="main">
     <div class="slider">
+      <input class="input" type="radio" id="img-1" name="button">
+      <input class="input" type="radio" id="img-2" name="button">
+      <input class="input" type="radio" id="img-3" name="button">
+      <input class="input" type="radio" id="img-4" name="button">
       <div class="slider__wrapper-image">
-        <div class="wrapper__img">
-          <img class="wrapper__img" src="./assets/img/meme-1.jpg" alt="deadline">
-        </div>
-        <div class="wrapper__img">
-          <img class="wrapper__img" src="./assets/img/meme-2.jpg" alt="meme mr. Bean is perplexed">
-        </div>
-        <div class="wrapper__img">
-          <img class="wrapper__img" src="./assets/img/meme-3.jpg" alt="animated series the incredibles meme with father">
-        </div>
-        <div class="wrapper__img">
-          <img class="wrapper__img" src="./assets/img/meme-4.jpg" alt="surprised mr. Bean meme">
-        </div>
+        <img class="slider__img" src="./assets/img/meme-1.jpg" alt="deadline">
+        <img class="slider__img" src="./assets/img/meme-2.jpg" alt="meme mr. Bean is perplexed">
+        <img class="slider__img" src="./assets/img/meme-3.jpg" alt="animated series the incredibles meme with father">
+        <img class="slider__img" src="./assets/img/meme-4.jpg" alt="surprised mr. Bean meme">
       </div>
       <div class="slider__wrapper-block">
         <div class="control">
-          <div class="control__wrapper">
+          <label for="img-1" class="control__wrapper">
             <div class="control__button"></div>
-          </div>
-          <div class="control__wrapper">
+          </label>
+          <label for="img-2" class="control__wrapper">
             <div class="control__button"></div>
-          </div>
-          <div class="control__wrapper">
+          </label>
+          <label for="img-3" class="control__wrapper">
             <div class="control__button"></div>
-          </div>
-          <div class="control__wrapper">
+          </label>
+          <label for="img-4" class="control__wrapper">
             <div class="control__button"></div>
-          </div>
+          </label>
         </div>
         <div class="wrapper-meme-text">
-          <div class="wrapper-meme-text__slider">
+          <!-- <div class="wrapper-meme-text__slider"> -->
             <div class="meme-text-1 meme-text">
                 - At the beginning of the project <br> 
                 - Before the deadline
@@ -56,7 +52,7 @@
             <div class="meme-text-4 meme-text">
               - When I didn't understand what I did, the site opened in the browser
             </div>
-          </div>
+          <!-- </div> -->
         </div>
       </div>
     </div>
