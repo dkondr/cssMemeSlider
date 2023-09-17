@@ -37,14 +37,41 @@
 
 .slider__wrapper-block {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-around;
   width: 750px;
+  margin-top: 5%;
 }
 
-.pagination {
+.control {
   display: flex;
+}
+
+.control__button {
+  width: 13px;
+  height: 13px;
+  background-color: transparent;
+  border: 1px solid rgb(163, 163, 204);
+  border-radius: 50%;
 }
 
 .wrapper-meme-text {
+  width: 350px;
   display: flex;
+
+}
+
+.wrapper-meme-text__slider {
+
+  display: flex;
+  flex-direction: row;
+
+}
+
+.meme-text {
+  width: 300px;
+  display: flex;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 110%;
 }
