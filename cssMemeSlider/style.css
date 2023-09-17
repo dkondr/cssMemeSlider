@@ -74,11 +74,14 @@
 .wrapper-meme-text {
   width: 350px;
   display: flex;
-  display: flex;
   overflow: hidden;
   width: 300px;
   transition: transform 0.3s;
 
+}
+
+.wrapper-meme-text > .meme-text {
+  transition: transform 0.3s;
 }
 
 /* .wrapper-meme-text__slider {
@@ -95,10 +98,17 @@
   font-family: 'Poppins', sans-serif;
   font-size: 110%;
   flex-shrink: 0;
+  /* order: 1;
+  transition: transform 0.3s; */
+  z-index: 1;
+  opacity: 0;
+  /* transition: opacity 0.3s; */
 }
 
-/* .wrapper-meme-text__slider > div {
-  opacity: 0;
+/* .control__wrapper > div {
+  cursor: pointer;
+    content: ' ';
+    background-color: rgb(163, 163, 204);
 } */
 
 /* css slider core */
@@ -121,17 +131,30 @@
 
 #img-1:checked ~ .slider__wrapper-block .wrapper-meme-text > .meme-text-1 {
   transform: translateX(0%);
+  /*order: 0; */
+  z-index: 5; 
+  opacity: 1;
+  overflow: visible;
 
 }
 
 #img-2:checked ~ .slider__wrapper-block .wrapper-meme-text > .meme-text-2 {
   transform: translateX(-100%);
+  /*order: 0; */
+  z-index: 5; 
+  opacity: 1;
 }
 
 #img-3:checked ~ .slider__wrapper-block .wrapper-meme-text > .meme-text-3 {
   transform: translateX(-200%);
+  /*order: 0; */
+  z-index: 5; 
+  opacity: 1;
 }
 
 #img-4:checked ~ .slider__wrapper-block .wrapper-meme-text > .meme-text-4 {
   transform: translateX(-300%);
+  /*order: 0; */
+  z-index: 5; 
+  opacity: 1;
 }
