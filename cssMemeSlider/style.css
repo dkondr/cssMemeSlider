@@ -7,7 +7,9 @@
 .main {
   height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /*justify-content: center;*/
   align-items: center;
 }
 
